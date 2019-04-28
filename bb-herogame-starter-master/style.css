@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+
+html {
+    background-color: lightblue;
+}
+
+header{
+    color: navy;
+    text-align: center;
+    padding: 1em;
+    margin: 1em;
+    font-family: 'Arimo', sans-serif;
+    font-size: 2em;
+    background-color: yellow;
+    
+}
+
+#game-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 3em lightcoral;
+}
+
+#hero-section{
+    width: 25%;
+    border: 3em lightcoral;
+}
+#enemy-section{
+    width: 25%;
+    text-align: right;
+}
+#game-section{
+    width: 50%;
+    text-align: center;
+    border: 1em solid lightcoral;
+    background-color: green;
+}
+  
+.image {
+    height: 10em;
+    padding: 1em;
+}
+
+.scoreboard {
+    padding: 1em;
+    font-family: 'Arimo', sans-serif;
+    text-align: center;
+}

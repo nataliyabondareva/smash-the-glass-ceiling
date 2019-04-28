@@ -1,0 +1,47 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Mocha Tests</title>
+    <link href="lib/mocha.css" rel="stylesheet" />
+    <link rel = "stylesheet"
+    type = "text/css"
+    href = "style.css" />
+</head>
+<body>
+  <!-- 👍 YOUR HTML HERE 👍 -->
+  <header id="header">Smash the Glass Ceiling!</header>
+  <main>
+    <div id="game-wrapper">
+      <div id="hero-section">  
+        <p id="hero-scoreboard" class="scoreboard"></p>
+        <img src="lib/img/parisa.jpg" id="inn" class="image" onclick="rest(hero)">
+        <img src="lib/img/bag.jpg" id="bag" class="image" onclick="equipWeapon(hero)">  
+      </div>
+      <div id="game-section">  
+        <img src="lib/img/dagger.jpg" id="dagger" class="image" onclick="pickUpItem(hero, dagger)">
+      </div>
+      <div id="enemy-section">
+          <p id="enemy-scoreboard" class="scoreboard"></p>
+        <img src="lib/img/glass-ceiling.jpg" id="glass-ceiling" class="image" onclick="smash(hero, enemy)">
+        <audio id="whack" src="lib/sound/shatter.mp3" preload="auto"></audio>
+      </div>
+  </div>
+  </main>
+
+
+  <!-- I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->
+  <button onclick="mocha.checkLeaks(); mocha.run();">Run the tests!</button>
+
+  <div id="mocha">
+  <!-- MOCHA TEST FEEDBACK WILL BE RENDERED HERE -->
+  </div>
+
+  <script src="lib/chai.js"></script>
+  <script src="lib/mocha.js"></script>
+  <script src="lib/sinon.js"></script>
+  <script>mocha.setup('bdd')</script>
+  <script src="YOUR_JAVASCRIPT_HERE.js"></script>
+  <script src="lib/game_logic.test.js"></script>
+
+</body>
+</html>
